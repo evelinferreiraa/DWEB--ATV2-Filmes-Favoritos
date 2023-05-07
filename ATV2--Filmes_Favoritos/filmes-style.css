@@ -1,0 +1,611 @@
+@import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap);
+
+/* Web */
+
+* {
+    margin: 0px;
+    font-family: 'Share Tech Mono', monospace;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* Background */
+body {
+    background-color: rgb(0, 0, 0);
+    background-image:
+        radial-gradient(orange, rgba(255, 255, 255, .2) 2px, transparent 40px),
+        radial-gradient(orange, rgba(255, 255, 255, .15) 1px, transparent 30px),
+        radial-gradient(orange, rgba(255, 255, 255, .1) 2px, transparent 40px),
+        radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+/* Bloco Link */
+.container-link {
+    background-color: rgba(252, 188, 116, 0.747);
+    width: 100px;
+    position: fixed;
+    border-radius: 20%;
+    margin: 100px 0 0 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.link-filmes {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.ref-filmes {
+    color: rgb(55, 136, 55);
+    text-decoration: underline;
+}
+
+.ref-filmes:hover {
+    background-color: rgb(252, 188, 116);
+    font-size: 15px;
+}
+
+/* Avatar */
+.container-avatar {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    margin-top: 50px;
+}
+
+.avatar {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border: rgb(252, 188, 116);
+    border-style: dotted;
+    border-radius: 50%;
+    padding: 5px;
+    object-fit: cover;
+}
+
+/* Nome */
+.container-nome {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nome {
+    font-family: 'VT323', monospace;
+    color: rgb(252, 188, 116);
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+/* Nível de acesso */
+.container-nivel {
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgb(252, 188, 116);
+    border-radius: 5px;
+    margin: auto;
+    width: 150px;
+    flex-wrap: wrap;
+}
+
+.organizacao {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(235, 69, 69);
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.acesso {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(55, 136, 55);
+    font-size: 18px;
+    flex-grow: 2;
+}
+
+/* Filmes */
+.container-filmes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.container-filmes div {
+    box-sizing: border-box;
+    padding: 15px 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+*div {
+    display: block;
+}
+
+.num-filme1 {
+    font-family: 'VT323', monospace;
+    color: rgb(252, 188, 116);
+    font-size: 50px;
+    text-align: initial;
+    float: left;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.titulo-filme1 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sinopse-filme1 {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.num-filme2 {
+    font-family: 'VT323', monospace;
+    color: rgb(252, 188, 116);
+    font-size: 50px;
+    text-align: initial;
+    float: left;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.titulo-filme2 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sinopse-filme2 {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.num-filme3 {
+    font-family: 'VT323', monospace;
+    color: rgb(252, 188, 116);
+    font-size: 50px;
+    text-align: initial;
+    float: left;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.titulo-filme3 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sinopse-filme3 {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.num-filme4 {
+    font-family: 'VT323', monospace;
+    color: rgb(252, 188, 116);
+    font-size: 50px;
+    text-align: initial;
+    float: left;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.titulo-filme4 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sinopse-filme4 {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.num-filme5 {
+    font-family: 'VT323', monospace;
+    color: rgb(252, 188, 116);
+    font-size: 50px;
+    text-align: initial;
+    float: left;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.titulo-filme5 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sinopse-filme5 {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.num-filme6 {
+    font-family: 'VT323', monospace;
+    color: rgb(252, 188, 116);
+    font-size: 50px;
+    text-align: initial;
+    float: left;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.titulo-filme6 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sinopse-filme6 {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 375px) {
+    * {
+        margin: 0px;
+        font-family: 'Share Tech Mono', monospace;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    /* Background */
+    body {
+        background-color: rgb(0, 0, 0);
+        background-image:
+            radial-gradient(orange, rgba(255, 255, 255, .2) 2px, transparent 40px),
+            radial-gradient(orange, rgba(255, 255, 255, .15) 1px, transparent 30px),
+            radial-gradient(orange, rgba(255, 255, 255, .1) 2px, transparent 40px),
+            radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+        background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+        background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    }
+
+    /* Bloco Link */
+    .container-link {
+        background-color: rgba(252, 188, 116, 0.747);
+        width: 100px;
+        position: fixed;
+        border-radius: 20%;
+        margin: 100px 0 0 30px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .link-filmes {
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .ref-filmes {
+        color: rgb(55, 136, 55);
+        text-decoration: underline;
+    }
+
+    .ref-filmes:hover {
+        background-color: rgb(252, 188, 116);
+        font-size: 15px;
+    }
+
+    /* Avatar */
+    .container-avatar {
+        display: inline-block;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-left: 30px;
+    }
+
+    .avatar {
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        border: rgb(252, 188, 116);
+        border-style: dotted;
+        border-radius: 50%;
+        padding: 5px;
+        object-fit: cover;
+    }
+
+    /* Nome */
+    .container-nome {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nome {
+        font-family: 'Orbitron', sans-serif;
+        ;
+        color: rgb(252, 188, 116);
+        font-size: 18px;
+    }
+
+    /* Nível de acesso */
+    .container-nivel {
+        display: flex;
+        justify-content: center;
+        border: 3px solid rgb(252, 188, 116);
+        border-radius: 5px;
+        margin: auto;
+        width: 150px;
+        flex-wrap: wrap;
+    }
+
+    .organizacao {
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgb(235, 69, 69);
+        font-size: 18px;
+        flex-grow: 1;
+    }
+
+    .acesso {
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgb(55, 136, 55);
+        font-size: 18px;
+        flex-grow: 2;
+    }
+
+    /* Filmes */
+    .container-filmes {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .num-filme1 {
+        font-family: 'VT323', monospace;
+        color: rgb(252, 188, 116);
+        font-size: 50px;
+        text-align: initial;
+        float: left;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+
+    .titulo-filme1 {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sinopse-filme1 {
+        color: white;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .num-filme2 {
+        font-family: 'VT323', monospace;
+        color: rgb(252, 188, 116);
+        font-size: 50px;
+        text-align: initial;
+        float: left;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+
+    .titulo-filme2 {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sinopse-filme2 {
+        color: white;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .num-filme3 {
+        font-family: 'VT323', monospace;
+        color: rgb(252, 188, 116);
+        font-size: 50px;
+        text-align: initial;
+        float: left;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+
+    .titulo-filme3 {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sinopse-filme3 {
+        color: white;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .num-filme4 {
+        font-family: 'VT323', monospace;
+        color: rgb(252, 188, 116);
+        font-size: 50px;
+        text-align: initial;
+        float: left;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+
+    .titulo-filme4 {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sinopse-filme4 {
+        color: white;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .num-filme5 {
+        font-family: 'VT323', monospace;
+        color: rgb(252, 188, 116);
+        font-size: 50px;
+        text-align: initial;
+        float: left;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+
+    .titulo-filme5 {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sinopse-filme5 {
+        color: white;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .num-filme6 {
+        font-family: 'VT323', monospace;
+        color: rgb(252, 188, 116);
+        font-size: 50px;
+        text-align: initial;
+        float: left;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+
+    .titulo-filme6 {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sinopse-filme6 {
+        color: white;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: justify;
+    }
+}
